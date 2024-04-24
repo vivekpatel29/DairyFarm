@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:id="@+id/llInvalidOrderAmount"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="15dp"
+        app:cardElevation="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="30dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:background="@drawable/cart_error_card_header"></View>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iVBackInvalidOrderAmount"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="start"
+        android:layout_margin="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:padding="5dp"
+        app:tint="@color/colorBlackThree"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/app_icon_transparent"
+                            android:visibility="gone"></ImageView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="cursive"
+                            android:gravity="center"
+                            android:lineSpacingExtra="-5dp"
+                            android:text="@string/invalid_order_amount_oops_text"
+                            android:textColor="@android:color/black"
+                            android:textSize="65dp"
+                            android:textStyle="bold|italic" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-12dp"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:lineSpacingExtra="-5dp"
+                            android:text="@string/invalid_order_amount_invalid_text"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-10dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="center"
+                            android:lineSpacingExtra="-5dp"
+                            android:text="Amount"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorDark"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="35dp"
+                        android:background="#a6a6a6"></View>
+
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/minimum_order_amount"
+                        app:tint="@color/colorDark"></ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvInvalidOrderAmountMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:gravity="start"
+                        android:lineSpacingExtra="-3dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp"></TextView>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnGoBackToCartInvalidOrderAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/gradient_button_bg"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/invalid_order_amount_go_back_to_cart_button_text"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

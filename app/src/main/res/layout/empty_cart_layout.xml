@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/llEmptyCart"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/empty_cart"
+        app:tint="@color/colorDark"
+        android:layout_gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="@string/empty_cart_title_text"
+        android:textColor="@color/colorDark"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text=""
+        android:lineSpacingExtra="2sp"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp" />
+
+
+    <Button
+        android:id="@+id/btnShopMore"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/gradient_button_bg"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:text="@string/empty_cart_shop_more_button_text"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>

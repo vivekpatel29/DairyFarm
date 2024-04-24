@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ApplyCouponStatusActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <include layout="@layout/apply_coupon_code_success_layout"></include>
+
+    <include layout="@layout/offer_coupon_apply_fail_layout"></include>
+
+</LinearLayout>

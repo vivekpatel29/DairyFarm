@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cVCategory"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_gravity="left"
+    android:background="@drawable/category_card_bg"
+    android:clickable="true"
+    android:elevation="20dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+                android:id="@+id/iVCategoryImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/app_icon_login" />
+
+            <FrameLayout
+                android:id="@+id/llComingSoonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.7"
+                    android:src="@drawable/category_coming_soon_bg"></ImageView>
+
+
+                <TextView
+                    android:id="@+id/tvComingSoonMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/gradient_ghost_button_bg"
+                    android:elevation="50dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="-5dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="8dp"
+                    android:text="Coming Soon!"
+                    android:textColor="@android:color/white"
+                    android:textSize="14dp"
+                    android:visibility="visible"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/llProgressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:zee_animDuration="300"
+                    app:zee_distanceMultiplier="3"
+                    app:zee_dotsRadius="8dp"
+                    app:zee_firstDotsColor="@color/colorProgressNotSelectedDark"
+                    app:zee_secondDotsColor="@color/colorProgressSelectedDark" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text=""
+                android:textSize="15dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tvAvailableString"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:lineSpacingExtra="-5dp"
+                android:text=""
+                android:textColor="@color/colorRed"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

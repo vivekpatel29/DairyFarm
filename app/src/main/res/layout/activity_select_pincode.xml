@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SelectPincodeActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:gravity="start"
+                android:text="@string/select_pincode_title_text"
+                android:textColor="@android:color/black"
+                android:textSize="24dp"
+                android:layout_marginEnd="45dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llSelectPincode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSelectPincodes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:padding="5dp"
+            android:clipToPadding="false"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <include layout="@layout/no_record_found_layout"></include>
+
+    <include layout="@layout/no_internet_connection_layout"></include>
+
+</LinearLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cVProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/llProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_card_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iVProductImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/app_icon_login" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/slider_gradient_bg" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llProgressLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ProgressBar
+                                android:id="@+id/progressbar"
+                                style="?android:attr/progressBarStyleLarge"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_above="@+id/relativeLayout1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:indeterminate="true"
+                                android:indeterminateDrawable="@drawable/progress" />
+
+                        </LinearLayout>
+
+
+                        <FrameLayout
+                            android:id="@+id/llComingSoonLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone">
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.7"
+                                android:src="@drawable/category_coming_soon_bg"></ImageView>
+
+
+                            <TextView
+                                android:id="@+id/tvComingSoonMessage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="8dp"
+                                android:background="@drawable/gradient_transparent_ghost_button_bg"
+                                android:elevation="50dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:singleLine="true"
+                                android:lineSpacingExtra="-5dp"
+                                android:paddingStart="5dp"
+                                android:paddingTop="3dp"
+                                android:paddingEnd="5dp"
+                                android:paddingBottom="6dp"
+                                android:text=""
+                                android:textColor="@android:color/white"
+                                android:textSize="10dp"
+                                android:visibility="visible"></TextView>
+                        </FrameLayout>
+
+
+                        <com.facebook.shimmer.ShimmerFrameLayout
+                            android:id="@+id/onOfferShimmerContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:shimmer_base_color="@color/colorProductShimmer"
+                            app:shimmer_highlight_color="@color/colorProductShimmer"
+                            app:shimmer_intensity="0.99">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/product_list_offer_drawable"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:paddingStart="6dp"
+                                android:paddingTop="3dp"
+                                android:paddingEnd="6dp"
+                                android:paddingBottom="3dp"
+                                android:text="@string/products_list_row_on_offer_text"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/white"
+                                android:textSize="8dp" />
+
+                        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+                        <TextView
+                            android:id="@+id/tvOfferString"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/product_list_offer_drawable"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingStart="6dp"
+                            android:paddingTop="3dp"
+                            android:paddingEnd="6dp"
+                            android:paddingBottom="3dp"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/white"
+                            android:textSize="8dp"
+                            android:visibility="gone" />
+
+                        <!--android:src="@drawable/product_list_default"-->
+
+
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProductName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="start"
+                        android:lineSpacingExtra="-5dp"
+                        android:text=""
+                        android:maxLines="2"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvProductMarketPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:paddingStart="1dp"
+                            android:paddingEnd="1dp"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/tvProductSellingPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="sans-serif-black"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvProductSavingsInPercentage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/colorDark"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <FrameLayout
+                            android:id="@+id/flAddToCart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:id="@+id/tvCustomizable"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="1dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif"
+                                    android:lineSpacingExtra="-5dp"
+                                    android:text="@string/products_list_row_customizable_text"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="13dp"
+                                    android:visibility="gone" />
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tvAddToCart"
+                                        android:layout_width="85dp"
+                                        android:layout_height="30dp"
+                                        android:layout_margin="5dp"
+                                        android:elevation="5dp"
+                                        android:layout_gravity="end"
+                                        android:background="@drawable/product_list_gradient_button_bg"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:gravity="center"
+                                        android:text="@string/products_list_row_add_text"
+                                        android:textAllCaps="true"
+                                        android:textColor="@android:color/white"
+                                        android:textSize="15dp" />
+
+                                    <ImageView
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp"
+                                        android:layout_gravity="end"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:padding="3dp"
+                                        android:src="@drawable/ic_add"
+                                        app:tint="@color/colorWhite"
+                                        android:visibility="gone"></ImageView>
+                                </FrameLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/flCartQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:layout_gravity="end"
+                                android:orientation="horizontal"
+                                android:background="@drawable/circle_control_button_bg"
+                                android:layout_margin="5dp"
+                                android:elevation="5dp">
+
+                                <Button
+                                    android:id="@+id/btnMinus"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circle_control_bg"
+                                    android:text="&#8722;"
+                                    android:textAllCaps="true"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16dp"
+                                    android:elevation="5dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="visible" />
+
+                                <TextView
+                                    android:id="@+id/tvProductQuantityCount"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="1dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginEnd="1dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="15dp" />
+
+                                <Button
+                                    android:id="@+id/btnPlus"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/circle_control_bg"
+                                    android:text="&#43;"
+                                    android:textAllCaps="true"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="16dp"
+                                    android:elevation="5dp"
+                                    android:layout_margin="5dp"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/flNotifyMe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="1dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif"
+                                    android:lineSpacingExtra="-5dp"
+                                    android:text="@string/products_list_row_out_of_stock_text"
+                                    android:textColor="@color/colorProductRedText"
+                                    android:textSize="13dp"
+                                    android:visibility="gone" />
+
+
+                                <TextView
+                                    android:layout_width="85dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="end|center"
+                                    android:background="@drawable/product_list_gradient_ghost_button_bg"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:elevation="5dp"
+                                    android:text="@string/products_list_row_notify_text"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorDark"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/flDontAddToCart"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tvCartString"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="1dp"
+                                    android:layout_weight="1"
+                                    android:fontFamily="sans-serif"
+                                    android:text="@string/products_list_row_cart_string_text"
+                                    android:textColor="@color/colorProductRedText"
+                                    android:textSize="13dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/tvAddToCartDisabled"
+                                    android:layout_width="85dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="end"
+                                    android:background="@drawable/product_list_not_selected_add_to_cart_bg"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:elevation="5dp"
+                                    android:text="@string/products_list_row_add_text"
+                                    android:textAllCaps="true"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFeaturedString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/product_list_featured_drawable"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:paddingTop="3dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="3dp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

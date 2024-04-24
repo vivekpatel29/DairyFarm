@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="75dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".Fragments.BottomNavigationMenuTwoFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                android:elevation="12dp">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="10dp"
+                    android:padding="3dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvCategoryTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-black"
+                    android:gravity="start"
+                    android:text="@string/category_fragment_title_text"
+                    android:textColor="@color/colorBlackThree"
+                    android:textSize="26dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/llSelectCategoryMaster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/layoutsearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="25dp"
+                        android:visibility="visible"
+                        app:cardCornerRadius="6dp"
+                        app:cardElevation="5dp"
+                        app:cardMaxElevation="5dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ic_search_bar_bg"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/etCategorySearch"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="sans-serif"
+                                android:hint="@string/category_fragment_search_bar_hint"
+                                android:imeOptions="actionDone"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:paddingStart="12dp"
+                                android:paddingEnd="12dp"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlackThree"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/iVCategoryClearSearchResults"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="3dp"
+                                android:padding="7dp"
+                                android:src="@drawable/ic_dialog_close_dark"
+                                android:visibility="gone"
+                                app:tint="@color/colorBlackThree"></ImageView>
+
+                            <ImageView
+                                android:id="@+id/ivCategoryVoiceSearch"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginEnd="4dp"
+                                android:padding="6dp"
+                                android:src="@drawable/ic_mic_none_black_24dp"
+                                android:visibility="visible"
+                                app:tint="@color/colorBlackThree"></ImageView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/llSelectCategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/rvSelectCategory"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <include layout="@layout/no_record_found_layout"></include>
+
+                            <include layout="@layout/no_search_result_found_layout"></include>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llProgressLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:visibility="gone">
+
+                            <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:zee_animDuration="300"
+                                app:zee_distanceMultiplier="3"
+                                app:zee_dotsRadius="8dp"
+                                app:zee_firstDotsColor="@color/colorProgressNotSelectedDark"
+                                app:zee_secondDotsColor="@color/colorProgressSelectedDark" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <include layout="@layout/no_internet_connection_layout"></include>
+            </LinearLayout>
+        </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

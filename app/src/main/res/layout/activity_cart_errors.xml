@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CartErrorsActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <include layout="@layout/not_available_for_taking_orders_layout"></include>
+
+    <include layout="@layout/not_available_for_taking_orders_at_location"></include>
+
+    <include layout="@layout/product_not_availabe_to_place_order_layout"></include>
+
+    <include layout="@layout/offer_coupon_invalid_layout"></include>
+
+    <include layout="@layout/time_slot_not_valid_layout"></include>
+
+    <include layout="@layout/minimum_order_amount_layout"></include>
+
+    <include layout="@layout/payment_method_invalid_layout"></include>
+
+</LinearLayout>

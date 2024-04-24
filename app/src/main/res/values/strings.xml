@@ -1,0 +1,398 @@
+<resources>
+    <string name="map_api_key">Dairy Farm</string>
+
+    <string name="app_name">Dairy Farm</string>
+
+    <!--Common Strings -->
+    <string name="common_no_internet">No Internet Connection, Please Try Again Later!</string>
+    <string name="common_something_went_wrong">Something Went Wrong, Please Try Again Later!</string>
+    <string name="common_volley_network_error">Network Error!</string>
+    <string name="common_volley_no_connection_error">No connection to server!</string>
+    <string name="common_volley_server_error">Server Error!</string>
+    <string name="common_volley_timeout_error">Connection Timeout Error!</string>
+    <string name="common_volley_error">Error!</string>
+    <string name="search_speech_prompt">Say something&#8230;</string>
+    <string name="search_speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+
+    <!--Splash -->
+    <string name="splash_no_internet_connection">No Internet Connection!</string>
+    <string name="splash_retry">Retry</string>
+    <string name="splash_version_text">v</string>
+
+    <!--No Internet-->
+    <string name="no_internet_title_text">Oh...!!</string>
+    <string name="no_internet_description_text">Please Check Your Internet Connection &amp; Try Again Later!</string>
+    <string name="no_internet_retry_button_text">Retry</string>
+
+    <!--No Record Found-->
+    <string name="no_record_found_title_text">Oh...!!</string>
+
+    <!--Success-->
+    <string name="success_title_text">Success !</string>
+
+    <!--Login-->
+    <string name="login_title_text">Sign In</string>
+    <string name="login_email_input_hint_text">Email ID</string>
+    <string name="login_password_input_hint_text">Password</string>
+    <string name="login_button_text">Sign In</string>
+    <string name="login_skip_login_text">Skip</string>
+
+    <string name="login_password_validation_empty_password_error_message_text">Please enter password</string>
+    <string name="login_password_validation_invalid_password_error_message_text">Your password must be at least 8 characters long</string>
+
+
+    <string name="login_email_validation_empty_email_error_message_text">Please enter email</string>
+    <string name="login_email_validation_invalid_email_error_message_text">Please enter valid email</string>
+
+
+    <!--Sign Up-->
+    <string name="sign_up_title_text">Sign Up</string>
+    <string name="sign_up_name_input_hint_text">Name</string>
+    <string name="sign_up_email_input_hint_text">Email</string>
+    <string name="sign_up_country_code_input_hint_text">+91</string>
+    <string name="sign_up_mobile_input_hint_text">Mobile Number</string>
+    <string name="sign_up_password_input_hint_text">Password</string>
+    <string name="sign_up_confirm_password_input_hint_text">Confirm Password</string>
+    <string name="sign_up_gender_text">Gender :</string>
+    <string name="sign_up_gender_male_text">Male</string>
+    <string name="sign_up_female_text">Female</string>
+    <string name="sign_up_button_text">Sign Up</string>
+
+
+    <string name="sign_up_gender_validation_error_toast_text">Please select at least one gender</string>
+    <string name="sign_up_name_validation_empty_name_error_message_text">Please enter name</string>
+    <string name="sign_up_email_validation_empty_email_error_message_text">Please enter email</string>
+    <string name="sign_up_email_validation_invalid_email_error_message_text">Please enter valid email</string>
+    <string name="sign_up_password_validation_invalid_password_error_message_text">Please Enter Password</string>
+    <string name="sign_up_password_validation_invalid_length_password_error_message_text">Please enter password in at least 8 characters long range</string>
+    <string name="sign_up_password_validation_invalid_confirm_password_error_message_text">Please Enter Confirm Password</string>
+    <string name="sign_up_password_validation_invalid_length_confirm_password_error_message_text">Please enter confirm password in at least 6 characters long range</string>
+    <string name="sign_up_password_validation_password_not_matched_error_message_toast_text">Passwords does not matched</string>
+    <string name="sign_up_mobile_validation_empty_mobile_error_message_text">Please enter mobile number</string>
+    <string name="sign_up_mobile_validation_invalid_mobile_error_message_text">Please enter valid mobile number</string>
+
+
+    <!--Forgot Password-->
+    <string name="forgot_password_title_text">Forgot Password</string>
+    <string name="forgot_password_description_text">Please enter your registered email id below on which you will receive otp via email to proceed further and complete the process of resetting your forgotten password.</string>
+    <string name="forgot_password_email_input_hint_text">Email ID</string>
+    <string name="forgot_password_button_text">Submit</string>
+    <string name="forgot_password_email_validation_empty_email_error_message_text">Please enter email</string>
+    <string name="forgot_password_email_validation_invalid_email_error_message_text">Please enter valid email</string>
+
+    <!--Forgot Password Otp Verification-->
+    <string name="forgot_password_otp_verification_title_text">Otp Verification</string>
+    <string name="forgot_password_otp_verification_description_text">Please enter 6 Digit Code that we have sent you via email on following email id to proceed.</string>
+    <string name="forgot_password_otp_verification_button_text">Verify Otp</string>
+    <string name="forgot_password_otp_verification_resend_otp_in_text">Resend OTP Email in</string>
+    <string name="forgot_password_otp_verification_otp_not_received_text">Didn\'t Received OTP ?</string>
+    <string name="forgot_password_otp_verification_resend_otp_text">Resend OTP</string>
+
+    <!--Rest Password-->
+    <string name="reset_password_title_text">Reset Password</string>
+    <string name="reset_password_description_text">All done now try setting new strong password and complete the password reset process for your forgotten password</string>
+    <string name="reset_password_new_password_input_hint_text">New Password</string>
+    <string name="reset_password_confirm_new_password_input_hint_text">Confirm New Password</string>
+    <string name="reset_password_button_text">Reset Password</string>
+
+    <string name="reset_password_validation_invalid_password_error_message_text">Please Enter Password</string>
+    <string name="reset_password_validation_invalid_length_password_error_message_text">Please enter new password in at least 8 characters long range</string>
+    <string name="reset_password_validation_invalid_confirm_password_error_message_text">Please Enter Confirm Password</string>
+    <string name="reset_password_validation_invalid_length_confirm_password_error_message_text">Please enter confirm password in at least 6 characters long range</string>
+    <string name="reset_password_validation_password_not_matched_error_message_toast_text">Passwords does not matched</string>
+
+
+    <!--Bottom Navigation Drawer Menu-->
+    <string name="bottom_navigation_drawer_one_text">Home</string>
+    <string name="bottom_navigation_drawer_two_text">Categories</string>
+    <string name="bottom_navigation_drawer_three_text">Account</string>
+    <string name="bottom_navigation_drawer_four_text">Help</string>
+
+    <!--Home-->
+    <string name="home_press_back_again_to_exit_text">Press back again to exit.</string>
+
+    <!--Home Fragment-->
+    <string name="home_fragment_title_text">Home</string>
+    <string name="home_fragment_search_bar_hint">Search for fresh dairy products</string>
+    <string name="home_fragment_delivery_standard_time_text">Standard TIME</string>
+    <string name="home_fragment_delivery_delivery_text">Delivery</string>
+    <string name="home_fragment_delivery_time_text">Time</string>
+
+
+    <!--Category Fragment-->
+    <string name="category_fragment_title_text">Categories</string>
+    <string name="category_fragment_search_bar_hint">Search by category name</string>
+
+
+    <!--Products List Grid Row-->
+    <string name="products_list_row_out_of_stock_text">Out Of Stock!</string>
+    <string name="products_list_row_notify_text">Notify</string>
+    <string name="products_list_row_cart_string_text">Out Of Stock!</string>
+    <string name="products_list_row_add_text">Add</string>
+    <string name="products_list_row_customizable_text">*Customizable</string>
+    <string name="products_list_row_on_offer_text">On Offer</string>
+    <string name="products_list_row_is_featured_text">Featured</string>
+
+    <!--Products Choice Variance Bottom Sheet Dialog-->
+    <string name="products_variance_choice_header_title_text">Choice Of Variance For</string>
+    <string name="products_variance_choice_item_total_text">Item Total</string>
+    <string name="products_variance_choice_add_item_text">Add Item</string>
+    <string name="products_variance_choice_add_item_not_selected_text">Add Item</string>
+    <string name="products_variance_choice_add_item_notify_me_text">Notify Me</string>
+
+    <!--Products option chooser Bottom Sheet Dialog-->
+    <string name="product_variance_option_chooser_previous_selection_title">Your previous selection</string>
+    <string name="product_variance_option_chooser_i_will_choose_button_title">I\'ll Choose</string>
+    <string name="product_variance_option_chooser_repeat_button_title">Repeat</string>
+
+    <!--Multiple Product Variance Customization Alert Dialog-->
+    <string name="multiple_customization_user_confirmation_title_text">Remove Item from cart</string>
+    <string name="multiple_customization_user_confirmation_description_text">This item has multiple variances added.Proceed to cart to remove item ?</string>
+    <string name="multiple_customization_user_confirmation_positive_button_text">Yes</string>
+    <string name="multiple_customization_user_confirmation_negative_button_text">No</string>
+
+    <!--Remove Product User Confirmation-->
+    <string name="remove_product_from_cart_confirmation_title_text">Confirmation</string>
+    <string name="remove_product_from_cart_confirmation_description_text">Are you sure want to remove this product from your cart?</string>
+    <string name="remove_product_from_cart_confirmation_positive_button_text">Yes</string>
+    <string name="remove_product_from_cart_confirmation_negative_button_text">No</string>
+
+    <!--Product Details-->
+    <string name="product_details_title_text">Product Details</string>
+    <string name="product_details_on_offer_text">On Offer</string>
+    <string name="product_details_packet_size_text">Packet Size</string>
+    <string name="product_details_description_text">Description</string>
+    <string name="product_details_add_to_wishlist_text">Add to Wishlist</string>
+    <string name="product_details_view_wishlist_text">View Wishlist</string>
+    <string name="product_details_add_to_cart_text">Add To Cart</string>
+    <string name="product_details_view_cart_text">View Cart</string>
+    <string name="product_details_add_to_cart_not_selected_text">Add To Cart</string>
+    <string name="product_details_share_product_link_take_look_at_text">\nPlease Take a Look At</string>
+    <string name="product_details_share_product_link_on_text">on</string>
+    <string name="product_details_share_product_double_new_line_text">\n\n</string>
+    <string name="product_details_choose_option_to_share_text">Choose Option to Share</string>
+    <string name="product_details_something_went_wrong_while_sharing_text">Oops! Something Went Wrong While Performing Sharing Operation</string>
+
+    <!--Product Image Details-->
+    <string name="product_image_details_no_image_for_product_text">No Images Available For this Product</string>
+
+
+    <!--Cart-->
+    <string name="cart_title_text">Cart</string>
+    <string name="cart_fruits_and_vegetable_title_text">Dairy Farm Items</string>
+    <string name="cart_coupons_title_text">Coupons</string>
+    <string name="cart_coupons_have_coupon_code_text">Have Coupon Code?</string>
+    <string name="cart_coupons_apply_coupon_code_text">Apply Coupon Code</string>
+    <string name="cart_coupons_offer_coupon_applier_on_bill_text">Offer Applied On the bill</string>
+    <string name="cart_address_title_text">Address</string>
+    <string name="cart_address_no_address_it_seems_to_be_no_address_added_text">It seems to be no address added</string>
+    <string name="cart_address_add_new_address_to_proceed_text">Add new address to proceed</string>
+    <string name="cart_address_add_new_address_button_text">Add New Address</string>
+    <string name="cart_address_no_default_address_text">No default address detected</string>
+    <string name="cart_address_select_address_to_proceed_text">Select address to proceed</string>
+    <string name="cart_address_deliver_to_text">Deliver To</string>
+    <string name="cart_address_home_address_type_text">Home</string>
+    <string name="cart_address_office_address_type_text">Office</string>
+    <string name="cart_address_other_address_type_text">Other</string>
+    <string name="cart_address_delivery_add_new_address_button_text">Add New Address</string>
+    <string name="cart_address_delivery_change_address_button_text">Change Address</string>
+    <string name="cart_time_slot_title_text">Time Slot</string>
+    <string name="cart_time_slot_schedule_your_order_delivery_text">Schedule your order delivery!</string>
+    <string name="cart_time_slot_select_time_slot_text">Select Time Slot</string>
+    <string name="cart_payment_method_title_text">Payment Method</string>
+    <string name="cart_wallet_payment_title_text">Pay With Wallet</string>
+    <string name="cart_payment_method_how_do_you_want_to_pay_text">How do you want to pay?</string>
+    ___
+    <string name="cart_payment_method_select_payment_method_text">Select Payment Method</string>
+    <string name="cart_payment_method_change_payment_method_text">Change payment method</string>
+    <string name="cart_bill_details_summary_title_text">Summary</string>
+    <string name="empty_cart_title_text">Oh...Feeling Lonely Here!!"</string>
+    <string name="empty_cart_shop_more_button_text">Shop More"</string>
+    <string name="cart_clear_all_cart_items_text">Clear Cart</string>
+
+
+    <string name="cart_apply_coupon_something_went_wrong_text">Something went wrong in selection of the offer coupon code, Please try again after some time!</string>
+    <string name="cart_select_address_something_went_wrong_text">Something went wrong in selection of the address, Please try again after some time!</string>
+
+
+    <!--Cart List-->
+    <string name="cart_list_product_on_offer_text">On Offer</string>
+
+
+    <!--Cart List Remove Cart Item Confirmation Alert-->
+    <string name="cart_item_remove_confirmation_title_text">Please Confirm</string>
+    <string name="cart_item_remove_confirmation_description_text">Are you sure want to remove this product from your cart ?</string>
+    <string name="cart_item_remove_confirmation_positive_button_text">Yes</string>
+    <string name="cart_item_remove_confirmation_negative_button_text">No</string>
+
+    <!--Select Offer Coupons-->
+    <string name="select_offer_coupon_apply_offer_coupon_title_text">Apply Coupons</string>
+    <string name="select_offer_coupon_enter_coupon_code_hint_text">Enter Coupon Code</string>
+    <string name="select_offer_coupon_apply_button_text">Apply</string>
+    <string name="select_offer_coupon_available_coupon_title_text">Available Coupons</string>
+
+    <!--Offer Coupons Applied Success-->
+    <string name="apply_coupon_code_success_success_title_text">Success!</string>
+    <string name="apply_coupon_code_success_coupon_code_title_text">Coupon Code</string>
+    <string name="apply_coupon_code_success_applied_title_text">Applied</string>
+    <string name="apply_coupon_code_success_ok_got_it_text">Okay, Got It!</string>
+
+    <!--Offer Coupons Applied Failed-->
+    <string name="apply_coupon_code_fail_oops_title_text">Oops!</string>
+    <string name="apply_coupon_code_fail_coupon_code_title_text">Coupon Code</string>
+    <string name="apply_coupon_code_fail_apply_failed_title_text">Not Applied</string>
+    <string name="apply_coupon_code_fail_ok_got_it_text">Okay, Got It!</string>
+
+    <!--Select Address-->
+    <string name="select_address_title_text">Select Address</string>
+    <string name="select_address_deliver_to_this_address_selected_button_text">Deliver to this address</string>
+    <string name="select_address_deliver_to_this_address_not_selected_button_text">Deliver to this address</string>
+
+    <!--Select Address List-->
+    <string name="select_address_list_default_address_text">Default</string>
+    <string name="select_address_list_home_address_type_text">Home</string>
+    <string name="select_address_list_office_address_type_text">Office</string>
+    <string name="select_address_list_other_address_type_text">Other</string>
+
+    <!--Add New Address-->
+    <string name="add_address_title_text">Add New Address</string>
+    <string name="add_address_name_hint_text">Name</string>
+    <string name="add_address_address_hint_text">Address</string>
+    <string name="add_address_locality_hint_text">Locality</string>
+    <string name="add_address_pincode_hint_text">Pincode</string>
+    <string name="add_address_state_hint_text">State</string>
+    <string name="add_address_town_or_city_hint_text">Town/City</string>
+    <string name="add_address_country_code_hint_text">+91</string>
+    <string name="add_address_mobile_number_hint_text">Mobile Number</string>
+    <string name="add_address_types_of_address_text">Type Of Address</string>
+    <string name="add_address_address_type_home_text">Home</string>
+    <string name="add_address_address_type_office_text">Office</string>
+    <string name="add_address_address_type_other_text">Other</string>
+    <string name="add_address_make_default_address_text">Make this is as my default address</string>
+    <string name="add_address_add_address_button_text">Add Address</string>
+    <string name="add_address_empty_address_type_validation_error_text">Address type is required to continue</string>
+    <string name="add_address_empty_name_validation_error_text">Please enter name</string>
+    <string name="add_address_empty_address_validation_error_text">Please enter address</string>
+    <string name="add_address_empty_locality_validation_error_text">Please enter locality</string>
+    <string name="add_address_pincode_validation_error">Please Select Valid Pincode</string>
+    <string name="add_address_empty_town_or_city_validation_error_text">Please enter town/city</string>
+    <string name="add_address_empty_state_validation_error_text">Please enter state</string>
+    <string name="add_address_mobile_number_validation_error_text">Please enter mobile number</string>
+    <string name="add_address_mobile_number_not_valid_validation_error_text">Please enter valid mobile number</string>
+
+
+    <!--Select Pincode-->
+    <string name="select_pincode_title_text">Choose Pincode</string>
+
+    <!--Edit Address-->
+    <string name="edit_address_title_text">Edit Address</string>
+    <string name="edit_address_name_hint_text">Name</string>
+    <string name="edit_address_address_hint_text">Address</string>
+    <string name="edit_address_locality_hint_text">Locality</string>
+    <string name="edit_address_pincode_hint_text">Pincode</string>
+    <string name="edit_address_state_hint_text">State</string>
+    <string name="edit_address_town_or_city_hint_text">Town/City</string>
+    <string name="edit_address_country_code_hint_text">+91</string>
+    <string name="edit_address_mobile_number_hint_text">Mobile Number</string>
+    <string name="edit_address_types_of_address_text">Type Of Address</string>
+    <string name="edit_address_address_type_home_text">Home</string>
+    <string name="edit_address_address_type_office_text">Office</string>
+    <string name="edit_address_address_type_other_text">Other</string>
+    <string name="edit_address_make_default_address_text">Make this is as my default address</string>
+    <string name="edit_address_edit_address_button_text">Edit Address</string>
+    <string name="edit_address_empty_address_type_validation_error_text">Address type is required to continue</string>
+    <string name="edit_address_empty_name_validation_error_text">Please enter name</string>
+    <string name="edit_address_empty_address_validation_error_text">Please enter address</string>
+    <string name="edit_address_empty_locality_validation_error_text">Please enter locality</string>
+    <string name="edit_address_pincode_validation_error">Please Select Valid Pincode</string>
+    <string name="edit_address_empty_town_or_city_validation_error_text">Please enter town/city</string>
+    <string name="edit_address_empty_state_validation_error_text">Please enter state</string>
+    <string name="edit_address_mobile_number_validation_error_text">Please enter mobile number</string>
+    <string name="edit_address_mobile_number_not_valid_validation_error_text">Please enter valid mobile number</string>
+
+    <!--My Addresses-->
+    <string name="my_address_title_text">Address</string>
+
+    <!--Delete Address User Confirmation Dialog-->
+    <string name="delete_address_user_confirmation_title_text">Please Confirm</string>
+    <string name="delete_address_user_confirmation_description_text">Are you sure want to remove this address ?</string>
+    <string name="delete_address_user_confirmation_positive_button_text">Yes</string>
+    <string name="delete_address_user_confirmation_negative_button_text">No</string>
+
+    <!--Address List-->
+    <string name="address_list_default_text">Default</string>
+    <string name="address_list_home_address_type_text">Home</string>
+    <string name="address_list_office_address_type_text">Office</string>
+    <string name="address_list_other_address_type_text">Other</string>
+
+    <!--Time Slot-->
+    <string name="time_slot_title_text">Select Time Slot</string>
+    <string name="time_slot_description_text">Select time slot for your order delivery from the time slot options below.</string>
+    <string name="time_slot_get_order_on_selected_time_slot_selected_button_text">Get Order On Selected Time Slot</string>
+    <string name="time_slot_get_order_on_selected_time_slot_not_selected_button_text">Get Order On Selected Time Slot</string>
+    <string name="time_slot_please_select_any_time_slot_error_text">Please Select Any Time Slot</string>
+    <string name="time_slot_no_time_slot_found_for_the_selected_time_slot_text">No time slots found for the selected time slot</string>
+
+
+    <!--Cart Errors-->
+    <!--Closed For Delivery-->
+    <string name="closed_for_delivery_sorry_text">Sorry</string>
+    <string name="closed_for_delivery_we_are_text">We\'Re</string>
+    <string name="closed_for_delivery_closed_text">Closed</string>
+    <string name="closed_for_delivery_go_back_to_cart_button_text">Go back to Cart</string>
+
+    <!--Closed For Delivery At Location-->
+    <string name="closed_for_delivery_at_location_sorry_text">Sorry</string>
+    <string name="closed_for_delivery_at_location_we_are_text">We\'Re</string>
+    <string name="closed_for_delivery_at_location_closed_text">Closed</string>
+    <string name="closed_for_delivery_at_location_go_back_to_cart_button_text">Go back to Cart</string>
+
+    <!--Invalid Cart Items-->
+    <string name="invalid_cart_items_title_text">Items Not Available</string>
+    <string name="invalid_cart_items_description_text">It Seems that some items in your cart are not available for the sell at this time. please remove it from your cart to continue.</string>
+    <string name="invalid_cart_items_remove_items_button_text_text">Remove Items</string>
+
+    <!--Invalid Coupon-->
+    <string name="invalid_coupon_oops_text">Oops!</string>
+    <string name="invalid_coupon_invalid_text">Invalid</string>
+    <string name="invalid_coupon_coupon_text">Coupon</string>
+    <string name="invalid_coupon_remove_coupon_button_text">Remove Coupon</string>
+
+    <!--Invalid Time Slot-->
+    <string name="invalid_time_slot_oops_text">Oops!</string>
+    <string name="invalid_time_slot_invalid_text">Invalid</string>
+    <string name="invalid_time_slot_time_slot_text">Time Slot</string>
+    <string name="invalid_time_slot_remove_time_slot_button_text">Remove Time Slot</string>
+
+    <!--Invalid Order Amount-->
+    <string name="invalid_order_amount_oops_text">Oops!</string>
+    <string name="invalid_order_amount_invalid_text">Invalid</string>
+    <string name="invalid_order_amount_amount_text">Amount</string>
+    <string name="invalid_order_amount_go_back_to_cart_button_text">Go back to cart</string>
+
+    <!--Invalid Payment Method-->
+    <string name="invalid_payment_method_oops_text">Oops!</string>
+    <string name="invalid_payment_method_choose_one_text">Choose One</string>
+    <string name="invalid_payment_method_payment_method_text">Payment Method</string>
+    <string name="invalid_payment_method_go_back_to_cart_button_text">Go back to cart</string>
+
+    <!--Payments-->
+    <string name="payments_title_text">Payments</string>
+    <string name="payment_methods_text">Payment Methods</string>
+    <string name="payment_method_select_payment_method_selected_button_text">Select Payment Method</string>
+    <string name="payment_method_select_payment_method_not_selected_button_text">Select Payment Method</string>
+    <string name="payment_method_selection_validation_error_text">Please Select At Least One Payment Method &amp; Try Again Later</string>
+
+    <!--Order Place Success-->
+    <string name="order_place_success_success_text">Success !</string>
+    <string name="order_place_success_shop_more_button_text">Shop More</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Address Maps Error-->
+    <string name="address_maps_error_title_text">Unable to identify location</string>
+    <string name="address_maps_error_message_text">Please retry and try again to get location</string>
+    <string name="address_maps_error_retry_button_text">Retry</string>
+
+</resources>

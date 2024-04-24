@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!--<com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicatorColor="@color/colorDark"
+        style="@style/AVLoadingIndicatorView.NewLarge"/>-->
+    <!--
+     <com.agrawalsuneet.dotsloader.loaders.AllianceLoader
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:alliance_animDuration="500"
+         app:alliance_distanceMultiplier="3"
+         app:alliance_dotsRadius="8dp"
+         app:alliance_drawOnlyStroke="false"
+         app:alliance_firstDotsColor="@color/colorProgressSelectedDark"
+         app:alliance_secondDotsColor="@color/colorProgressSelectedDark"
+         app:alliance_strokeWidth="4dp"
+         app:alliance_thirdDotsColor="@color/colorProgressSelectedDark" />
+    -->
+
+    <!--
+        <com.agrawalsuneet.dotsloader.loaders.BounceLoader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bounce_animDuration="300"
+            app:bounce_ballColor="@color/colorDark"
+            app:bounce_ballRadius="8dp"
+            app:bounce_shadowColor="@color/colorRed"
+            app:bounce_showShadow="true" />
+    -->
+
+
+    <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:zee_animDuration="300"
+        app:zee_distanceMultiplier="3"
+        app:zee_dotsRadius="8dp"
+        app:zee_firstDotsColor="@color/colorProgressNotSelectedDark"
+        app:zee_secondDotsColor="@color/colorProgressSelectedDark" />
+
+
+    <!--<com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/dairy_farm_loader"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>-->
+
+</LinearLayout>

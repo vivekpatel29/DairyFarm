@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LogoutActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iVLogoutIcon"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/inactive_user"/>
+
+            <TextView
+                android:id="@+id/tvLogoutTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:lineSpacingExtra="2sp"
+                android:text="Oops...Blocked!"
+                android:textColor="@color/colorDark"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvLogoutMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="You are blocked by the admin. Please contact admin to access app."
+                android:textColor="@color/colorBlackThree"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

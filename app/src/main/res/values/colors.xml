@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bfb2</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="colorDark">#028090</color>
+
+    <color name="LogoColorGrey">#C5C6C6</color>
+
+    <color name="gradientStartColor">@color/colorDark</color>
+    <color name="gradientEndColor">@color/colorPrimary</color>
+
+    <color name="colorEditTextLayoutColor">@color/colorPrimary</color>
+    <color name="colorEditTextLayoutHintColor">@color/colorBlackThree</color>
+    <color name="colorEditTextTextColor">@color/colorBlackThree</color>
+    <color name="PasswordToggleTintColor">@color/colorPrimary</color>
+
+    <color name="logoutIconColor">@color/colorPrimary</color>
+
+    <color name="userDisabledIconColor">@color/colorWhite</color>
+    <color name="welcomeScreenSkipLoginColor">@color/colorBlackSix</color>
+______________________________________________
+    <color name="colorNoInternetConnection">@color/colorDark</color>
+
+    <color name="colorDefaultSelectorLoginSlider">#e6f9f7</color>
+    <color name="colorSelectorSelectedLoginSlider">@color/colorWhite</color>
+
+    <color name="colorNoRecordFoundConnection">@color/colorDark</color>
+
+    <color name="applyPromoCodeHintColor">#5c5c5c</color>
+
+    <color name="colorProgressNotSelectedDark">@color/colorPrimary</color>
+    <color name="colorProgressSelectedDark">@color/colorDark</color>
+
+    <color name="colorAsh">#a6a6a6</color>
+    <color name="colorLightText">#6C727C</color>
+    <color name="colorLightHintText">#5c5c5c</color>
+
+    <color name="colorRedGradientStartColor">#FF0000</color>
+    <color name="colorRedGradientEndColor">#990000</color>
+
+    <color name="colorGreenGradientStartColor">#04BF00</color>
+    <color name="colorGreenGradientEndColor">#015D00</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackOne">#111111</color>
+    <color name="colorBlackTwo">#222222</color>
+    <color name="colorBlackThree">#333333</color>
+    <color name="colorBlackFour">#444444</color>
+    <color name="colorBlackFive">#555555</color>
+    <color name="colorBlackSix">#666666</color>
+    <color name="colorBlackSeven">#777777</color>
+    <color name="colorBlackEight">#888888</color>
+    <color name="colorBlackNine">#999999</color>
+
+
+    <color name="colorSplashGradientStartColor">#e6f9f7</color>
+    <color name="colorSplashGradientEndColor">#e6f2f4</color>
+-----------------------------------------------
+
+    <color name="colorRed">#C92123</color>
+
+    <color name="colorSliderGradientBg">#00998e</color>
+
+    <color name="colorAddToCartNotSelected">#A5ABA9</color>
+
+    <color name="colorProductShimmer">#f5f5f5</color>
+
+    <color name="colorProductRedText">#da4439</color>
+
+
+    <color name="colorFeaturedProductGradientStartColor">#EC9F05</color>
+    <color name="colorFeaturedProductGradientEndColor">#FF4E00</color>
+
+    <color name="colorLightControllerBackground">#e6f9f7</color>
+
+    <color name="colorProductDetailsShimmer">#f5f5f5</color>
+    <color name="colorProductDetailsDivider">#e5e5e5</color>
+    <color name="colorProductDetailsRedText">#da4439</color>
+
+    <color name="colorCartTotalItemQtyLight">#6C727C</color>
+    <color name="colorCartAddressLight">#5F5F5F</color>
+
+    <color name="colorCartProductRemove">@color/colorBlackNine</color>
+    <color name="colorCartProductDetailsShimmer">#f5f5f5</color>
+
+    <color name="colorCouponCodeApplyDisabled">#33ccc1</color>
+    <color name="colorAddressLightText">#5F5F5F</color>
+
+    <color name="colorCartBillDetailsListText">#6C727C</color>
+    <color name="black">#000000</color>
+    <color name="teal_200">#009688</color>
+
+
+</resources>

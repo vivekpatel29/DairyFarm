@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProductDetailsImagesActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/flProductDetailsVarianceWiseImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:visibility="visible">
+
+                    <com.github.chrisbanes.photoview.PhotoView
+                        android:id="@+id/ivProductBigImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/app_icon_login" />
+
+                    <LinearLayout
+                        android:id="@+id/llProgressLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:zee_animDuration="300"
+                            app:zee_distanceMultiplier="3"
+                            app:zee_dotsRadius="8dp"
+                            app:zee_firstDotsColor="@color/colorProgressNotSelectedDark"
+                            app:zee_secondDotsColor="@color/colorProgressSelectedDark" />
+
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rVProductVarianceWiseImages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:padding="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+                    <ImageView
+                        android:id="@+id/iVBack"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:padding="3dp"
+                        app:tint="@color/colorBlack"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+                </FrameLayout>
+
+                <include layout="@layout/no_record_found_layout"></include>
+
+                <include layout="@layout/no_internet_connection_layout"></include>
+
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

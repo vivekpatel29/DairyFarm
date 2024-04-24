@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SelectOfferCouponApplyPromoCodeActivity"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:elevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="45dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:gravity="start"
+                android:text="@string/select_offer_coupon_apply_offer_coupon_title_text"
+                android:textColor="@android:color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llApplyCoupons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvApplyCoupons"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            android:visibility="visible"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_apply_coupon_search_bg">
+
+                <EditText
+                    android:id="@+id/etCouponCode"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/select_offer_coupon_enter_coupon_code_hint_text"
+                    android:fontFamily="sans-serif"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/applyPromoCodeHintColor"
+                    android:textSize="16dp"
+                    android:layout_marginEnd="5dp" />
+
+                <TextView
+                    android:id="@+id/tvApplyEnabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center"
+                    android:text="@string/select_offer_coupon_apply_button_text"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorDark"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvApplyDisabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="@string/select_offer_coupon_apply_button_text"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorCouponCodeApplyDisabled"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:gravity="start"
+                android:text="@string/select_offer_coupon_available_coupon_title_text"
+                android:textColor="@android:color/black"
+                android:textSize="22dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOfferCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:padding="@dimen/item_offset"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/no_record_found_layout"></include>
+
+    <include layout="@layout/no_internet_connection_layout"></include>
+
+</LinearLayout>

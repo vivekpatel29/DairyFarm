@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llSlider"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:background="@drawable/product_details_images_grid_border_bg"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <FrameLayout
+        android:id="@+id/llBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iVProductDetailsImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            android:src="@drawable/app_icon_login"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="1dp"
+            android:visibility="visible"
+            android:padding="0.3dp"
+            android:src="@drawable/slider_gradient_bg"/>
+
+
+        <LinearLayout
+            android:id="@+id/llProgressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:zee_animDuration="300"
+                app:zee_distanceMultiplier="3"
+                app:zee_dotsRadius="8dp"
+                app:zee_firstDotsColor="@color/colorProgressNotSelectedDark"
+                app:zee_secondDotsColor="@color/colorProgressSelectedDark" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivImageBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/product_details_image_not_selected_bg"></ImageView>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cVPaymentMethods"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/llPaymentMethods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_card_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="12dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/iVPaymentMethodsImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_icon_transparent" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/slider_gradient_bg" />
+
+
+                <LinearLayout
+                    android:id="@+id/llProgressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.agrawalsuneet.dotsloader.loaders.ZeeLoader
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:zee_animDuration="300"
+                        app:zee_distanceMultiplier="3"
+                        app:zee_dotsRadius="6dp"
+                        app:zee_firstDotsColor="@color/colorProgressNotSelectedDark"
+                        app:zee_secondDotsColor="@color/colorProgressSelectedDark" />
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/llComingSoonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.7"
+                        android:src="@drawable/category_coming_soon_bg"></ImageView>
+
+                    <TextView
+                        android:id="@+id/tvComingSoonMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/gradient_transparent_ghost_button_bg"
+                        android:elevation="50dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="-5dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="6dp"
+                        android:singleLine="true"
+                        android:text="Coming Soon!"
+                        android:textColor="@android:color/white"
+                        android:textSize="10dp"
+                        android:visibility="visible"></TextView>
+                </FrameLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvPaymentMethodName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="-5dp"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/rbNotSelected"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_not_selected_radio_button"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/rbSelected"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/circle_check_bg"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_check_black_24dp"
+                    app:tint="@color/colorWhite"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/rbSelectedNotSelected"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/circle_not_selected_check_bg"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_check_black_24dp"
+                    app:tint="@android:color/white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPaymentMethodMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="-3dp"
+                android:paddingEnd="8dp"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
